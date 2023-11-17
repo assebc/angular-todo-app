@@ -1,0 +1,3 @@
+<h2>TODO</h2>
+<app-todo-form (todoSubmitted)="todoService.addTodo($event)"/>
+<app-todo-list [todos]="todoService.todos()" />

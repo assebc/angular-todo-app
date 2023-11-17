@@ -1,0 +1,9 @@
+<ul>
+  @for (todo of todos; track todo.id){
+    <li>
+      <a routerLink="/details/{{ todo.id }}">{{ todo.title }}</a>  
+    </li>
+  } @empty {
+    <li>Nothing to do!</li>
+  }
+</ul>
